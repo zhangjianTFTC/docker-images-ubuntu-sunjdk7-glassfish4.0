@@ -2,7 +2,7 @@ FROM n3ziniuka5/ubuntu-oracle-jdk:14.10-JDK7
 MAINTAINER zhangjian@tftiancai.com
 
 RUN         apt-get update && \
-            apt-get install -y curl unzip zip inotify-tools && \
+            apt-get install -y curl unzip zip inotify-tools pwgen expect && \
             rm -rf /var/lib/apt/lists/*
 
 #RUN         curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/release/glassfish-4.0.zip && \
