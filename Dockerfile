@@ -1,4 +1,4 @@
-FROM n3ziniuka5/ubuntu-oracle-jdk
+FROM n3ziniuka5/ubuntu-oracle-jdk:14.10-JDK7
 MAINTAINER zhangjian@tftiancai.com
 
 RUN         apt-get update && \
