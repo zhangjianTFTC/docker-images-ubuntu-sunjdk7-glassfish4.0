@@ -15,7 +15,7 @@ ADD run.sh run.sh
 ADD change_admin_password.sh change_admin_password.sh
 ADD change_admin_password_func.sh change_admin_password_func.sh
 ADD enable_secure_admin.sh enable_secure_admin.sh
-ADD glassfish-4.0.zip glassfish-4.0.zip
+ADD glassfish-4.0.zip /tmp/glassfish-4.0.zip
 RUN         unzip /tmp/glassfish-4.0.zip -d /usr/local && \
             rm -f /tmp/glassfish-4.0.zip
 RUN chmod +x .sh
