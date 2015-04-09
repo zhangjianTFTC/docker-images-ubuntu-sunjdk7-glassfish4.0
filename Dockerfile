@@ -16,8 +16,7 @@ ADD change_admin_password.sh change_admin_password.sh
 ADD change_admin_password_func.sh change_admin_password_func.sh
 ADD enable_secure_admin.sh enable_secure_admin.sh
 ADD glassfish-4.0.zip glassfish-4.0.zip
-RUN         curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/release/glassfish-4.0.zip && \
-            unzip /tmp/glassfish-4.0.zip -d /usr/local && \
+RUN         unzip /tmp/glassfish-4.0.zip -d /usr/local && \
             rm -f /tmp/glassfish-4.0.zip
 RUN chmod +x .sh
 
