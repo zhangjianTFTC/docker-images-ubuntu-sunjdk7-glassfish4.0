@@ -2,8 +2,8 @@
 
 set -ex
 
-HOSTNAME_SET=${EXT_HOSTNAME:-$(hostname)}
-hostname $HOSTNAME_SET
+#HOSTNAME_SET=${EXT_HOSTNAME:-$(hostname)}
+#hostname $HOSTNAME_SET
 
 asadmin start-domain 
 if [ ! -f /.glassfish_admin_password_changed ]; then
